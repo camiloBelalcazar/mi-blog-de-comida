@@ -1,0 +1,313 @@
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Asap', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* ============= */
+/*    herder     */
+/* ============  */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+.header.container {
+    position: relative;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    max-width: 1024px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    color:  #fff;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-title {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+.logo-text { 
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.nav-link {
+    font-size: 12px;
+    color: #fff;
+}
+/* ============= */
+/*      hero     */
+/* ============  */
+
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(fondo\ proyecto\ perron.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hero .container {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 25px 10px 0;
+}
+
+.hero-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    
+}
+
+/* ============= */
+/*    Blog       */
+/* ============  */
+
+.blog {
+    padding: 50px 0;
+}
+
+
+.blog-title {
+   font-size: 2rem;
+   text-align: center;
+}   
+
+.articulos {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}    
+
+
+
+
+.article-body {
+    padding: 0 20px 20px;
+}
+.article-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.article-link {
+    background-color: rgb(189, 119, 119);
+    padding: 7px 12px;
+    border-radius: 7;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* ============= */
+/*    parallax   */
+/* ============  */
+
+.parallax {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url('https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    color: #b78787;
+}
+/* ===================== */
+/*    top restaurantes   */
+/* ====================  */
+
+.Top-restaurantes-description {
+    text-align: center;
+ }
+
+.Top-restaurantes {
+ text-align: center;
+}
+
+.Top-restaurantes-title {
+ font-size: 1rem;
+ margin-top: 15px;
+ margin-bottom: 10px;
+
+}
+
+/* ============= */
+/*    footer     */
+/* ============  */
+.footer {
+    padding-top: 2px;
+}
+.footer .container {
+    padding: 0 0 10px;
+}
+
+.copy {
+text-align: center;
+}
+.copy-title {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+.copy-text { 
+    font-weight: 7;
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer-link {
+    font-size: 12px;
+    color: #000000;
+}
+/* ============= */
+/*  responsive   */
+/* ============  */
+@media screen and (min-width: 375px){
+body {
+     background-color: #d6d1cd;
+     color: #ad5f5f;
+} 
+.header.container{
+     flex-direction: row;
+     justify-content: space-between;
+}
+ .hero {
+     min-height: 750;
+ } 
+ 
+ 
+.hero-title {
+     font-size: 1.5rem;
+ }
+ 
+ .hero-description {
+     font-size: 1.5rem;
+ }
+
+ .article {
+    display: flex;
+    align-items: center;
+ }
+ .article-img {
+    width: 50%;
+    height: 400px;
+    border-radius: 25px;
+    overflow: hidden;
+ }
+ .article-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.articulos .article:nth-child(even) {
+  flex-direction: row-reverse;
+}     
+ 
+ .article-body {
+    width: 50%;
+ }
+
+ }
+ @media screen and (min-width: 1024px){
+    body {
+         background-color: #d6d1cd;
+         color: #ad5f5f;
+    } 
+    .header.container{
+         flex-direction: row;
+         justify-content: space-between;
+    }
+     .hero {
+         min-height: 750;
+     } 
+     
+     
+    .hero-title {
+         font-size: 1.5rem;
+     }
+     
+     .hero-description {
+         font-size: 1.5rem;
+     }
+     
+     .article {
+        display: flex;
+        align-items: center;
+     }
+     .article-img {
+        width: 50%;
+        height: 400px;
+        border-radius: 25px;
+        overflow: hidden;
+     }
+     .article-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .articulos .article:nth-child(even) {
+      flex-direction: row-reverse;
+    }     
+     
+     .article-body {
+        width: 50%;
+     }
+    
+     }
+     
+    
