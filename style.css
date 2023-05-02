@@ -11,6 +11,8 @@ body{
     font-size: 1rem;
     line-height: 1.5;
     margin: 0;
+    background-color: #d6d1cd;
+    color: #ad5f5f;
 }
 
 a {
@@ -36,7 +38,6 @@ img {
     z-index: 5;
 }
 .header.container {
-    position: relative;
     height: 150px;
     display: flex;
     flex-direction: column;
@@ -81,6 +82,7 @@ img {
 
 
 .hero {
+    position: relative;
     min-height: 500px;
     display: flex;
     flex-direction: column;
@@ -92,8 +94,12 @@ img {
 }
 
 .hero .container {
+    display: flex;
+    max-width: 1024px;
     position: relative;
-    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     padding: 25px 10px 0;
 }
@@ -163,8 +169,11 @@ img {
 }
 /* ===================== */
 /*    top restaurantes   */
-/* ====================  */
+/* ====================  */ 
 
+.Top-restaurantes .container {
+    max-width: 1024px; 
+}
 .Top-restaurantes-description {
     text-align: center;
  }
@@ -187,6 +196,7 @@ img {
     padding-top: 2px;
 }
 .footer .container {
+    max-width: 1024px;
     padding: 0 0 10px;
 }
 
@@ -215,7 +225,7 @@ text-align: center;
 /* ============= */
 /*  responsive   */
 /* ============  */
-@media screen and (min-width: 375px){
+@media screen and (min-width: 678px){
 body {
      background-color: #d6d1cd;
      color: #ad5f5f;
